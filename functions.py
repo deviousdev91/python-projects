@@ -1,4 +1,4 @@
-FILEPATH = 'files/todos.txt'
+FILEPATH = 'todos.txt'
 
 
 def get_todos(filepath=FILEPATH):
@@ -21,3 +21,9 @@ def write_todos(todos_arg, filepath=FILEPATH):
     """
     with open(filepath, 'w') as file:
         file.writelines(todos_arg)
+
+if __name__ == "__main__":
+    #todos = ["Get grocery\n", "Play soccer\n", "Run a marathon\n"]
+    #write_todos(todos)
+    todos = get_todos()
+    print(todos)
